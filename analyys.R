@@ -2,3 +2,5 @@
 proovid <- read.csv("proovid.csv")
 keskmised <- aggregate(ekspressioon ~ grupp, data = proovid, FUN = mean)
 print(keskmised)
+mediaanid <- aggregate(ekspressioon ~ grupp, data = proovid, FUN = median)
+print(mediaanid)
